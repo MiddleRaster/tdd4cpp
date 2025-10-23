@@ -1,7 +1,7 @@
 # tdd4cpp
 
 This is a drop-in replacement for Visual Studio's Native C++ Unit Test harness.
-It's header-only and is portable to MacOS, Linux, etc.
+It's header-only, doesn't include any other headers, and is portable to MacOS, Linux, etc.
 
 If you want "VS native C++"-style unit tests, #include "CppUnitTest.h". Usage is "Assert::AreEquals(1, 2);"
 
