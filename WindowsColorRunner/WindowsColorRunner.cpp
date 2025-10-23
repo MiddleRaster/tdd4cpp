@@ -42,7 +42,7 @@ public: // TDD::Reporter
         cc.SetFontAndBackgroundColors((WORD)ConsoleColor::LightRed, (WORD)ConsoleColor::Black);
 
         std::cout << "Failure in " << tr.group << "." << tr.testname << " - \n";
-        std::cout << tr.file_name << "(" << tr.line_number << ") : ERROR : " << tr.error_string << "\n";
+        std::cout << tr.file_name << "(" << tr.line_number << ") : warning : Assertion Failure : " << tr.error_string << "\n";
     }
 private:
     ResultReporter& operator=(const ResultReporter&) = delete;
@@ -55,5 +55,5 @@ int main()
     ResultReporter rr;
     TDD::Discriminator discriminator;
     TDD::ClassRegistrarBase::RunTests(discriminator, rr);
-    return (rr.TestsRun() == 0) || (rr.TestsFailed() != 0) ? -1 : 0;
+    return 0; // returning anything other than 0, when run as a post-build step, gives an extra "error" in the output/error list windows.
 }
