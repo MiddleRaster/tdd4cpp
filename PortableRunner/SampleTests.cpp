@@ -43,3 +43,17 @@ namespace IfYouCannotUseExceptionsAtAll
         }
     };
 }
+
+
+namespace IfYouLikeFluentAssertions
+{
+    using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+    TEST_CLASS(SomeClass)
+    {
+        TEST_METHOD(AFluentTest)
+        {
+            TddAssert().That(2).Is.EqualTo(1, L"not even this way");
+        }
+    };
+}
