@@ -18,6 +18,6 @@ There are test runners for:
  - a Windows GUI which loads your tests from a dll (like NUnit does).
 
 
-Finally, if you want to replace Visual Studio's rather slow test runner entirely, you can compile your tests and link them into either command-line runner, and then make the runner a post-build step.
-The tests will run automatically after a successful build, and the assertion failures will show up in the output window and in the error list window as warnings. 
+Finally, if you want to replace Visual Studio's dreadfully slow test runner entirely, you can compile your tests and link them into either command-line runner, and then make the runner a post-build step.
+The tests will run automatically after a successful build, and the assertion failures will show up in the output window and in the error list window as **warnings**. 
 They are clickable, which will take you to the source file and the line on which the assertion fired.
