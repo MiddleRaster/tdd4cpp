@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "..\tdd.h"
+#include "..\shared\tdd.h"
 
 #include "ConsoleColor.h"
 

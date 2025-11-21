@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\tdd.h"
+#include "..\shared\tdd.h"
 
 class PortableReporter : public TDD::Reporter
 {

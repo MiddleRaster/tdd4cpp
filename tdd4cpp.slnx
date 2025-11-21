@@ -1,0 +1,19 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/readme/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/shared/">
+    <File Path="shared/CppUnitTest.h" />
+    <File Path="shared/CppUnitTestAssert.h" />
+    <File Path="shared/SampleTests.cpp" />
+    <File Path="shared/tdd.h" />
+    <File Path="shared/tddAssertBase.h" />
+    <File Path="shared/TddAssertStl.h" />
+  </Folder>
+  <Project Path="PortableRunner/PortableRunner.vcxproj" Id="a6e6bb00-2bae-49a4-b24e-6782b724258d" />
+  <Project Path="WindowsColorRunner/WindowsColorRunner.vcxproj" Id="a7462dfa-65c7-4f03-8563-22d811dc57bc" />
+</Solution>
