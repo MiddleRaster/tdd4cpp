@@ -45,7 +45,7 @@ namespace YourNamespace
 
 ### Summary
 
-| if you | then | usage is |
+| if you | then | usage is &nbsp;&nbsp;&nbsp; |
 |--------|------|----------|
 | want "VS native C++"-style unit tests | ```#include "CppUnitTest.h"``` | ```Assert::AreEqual(1, 2);``` |
 | cannot use C++20 features | ```#include "TddAssertStl.h"``` | ```TddAssert().AreEqual(1, 2);``` |
