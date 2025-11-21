@@ -45,10 +45,12 @@ namespace YourNamespace
 
 ### Summary
 
-- If you want "VS native C++"-style unit tests, ```#include "CppUnitTest.h"```. Usage is ```Assert::AreEqual(1, 2);```
-- If you cannot use C++20 features, ```#include "TddAssertStl.h"```. Usage is ```TddAssert().AreEqual(1, 2);```
-  - If you cannot use ```std::string```, you can use your own string type in ```tddAssertBase.h```
-- If you cannot use exceptions, ```#include "tdd.h"``` and use the ```TDD_VERIFY*``` macros.  Usage is ```TDD_VERIFY_EQUAL(1, 2);```
+| if you | then | usage is |
+|----------|----------|
+| want "VS native C++"-style unit tests | ```#include "CppUnitTest.h"``` | ```Assert::AreEqual(1, 2);``` |
+| cannot use C++20 features | ```#include "TddAssertStl.h"``` | ```TddAssert().AreEqual(1, 2);``` |
+| cannot use ```std::string``` | use your own string type in ```tddAssertBase.h``` | ```TddAssert().AreEqual(1, 2);``` |
+| cannot use exceptions | ```#include "tdd.h"``` and use the ```TDD_VERIFY*``` macros | ```TDD_VERIFY_EQUAL(1, 2);``` |
 
 ### Test Runners
 
