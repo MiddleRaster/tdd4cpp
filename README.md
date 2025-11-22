@@ -4,7 +4,7 @@ This is a drop-in replacement for Visual Studio's Native C++ Unit Testing framew
 It's header-only, doesn't include any other headers, and is portable to MacOS, Linux, etc.
 
 Here are the three ways to write asserts:
-```
+```cpp
 #include "..\shared\CppUnitTest.h"
 
 namespace YourNamespace
